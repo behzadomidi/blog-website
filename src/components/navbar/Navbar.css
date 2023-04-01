@@ -114,7 +114,7 @@
 }
 
 input:checked + .slider {
-  background: #0e0e0e;
+  background: #5f0202;
 }
 
 input:checked + .slider::before {

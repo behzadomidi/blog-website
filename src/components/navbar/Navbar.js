@@ -24,7 +24,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
   return (
     <div
       className="nav"
-      style={{ background: theme == "light" ? "#fff" : "#2E3840" }}
+      style={{ background: theme == "light" ? "#fff" : "#182434" }}
     >
       <ul className="navbarWrapper">
         <li>
