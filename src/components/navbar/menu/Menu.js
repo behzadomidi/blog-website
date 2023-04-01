@@ -8,7 +8,7 @@ function Menu() {
   return (
     <div
       className="navbars"
-      style={{ background: theme == "light" ? "#fff" : "#2E3840" }}
+      style={{ background: theme == "light" ? "#fff" : "#182434" }}
     >
       <ul className="navbarWrappers">
         <li
