@@ -276,6 +276,10 @@ a {
   font-weight: 600;
   line-height: 21px;
 }
+.menu-post a:hover {
+  color: #777777 !important;
+  text-decoration: underline;
+}
 .item-count {
   background: #f05928;
   color: #fff;
