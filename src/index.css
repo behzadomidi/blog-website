@@ -120,6 +120,12 @@ a {
   padding-left: 6px;
   bottom: 2px;
 }
+.blogDetails:hover {
+  color: #6bc7ef;
+}
+.buttonBlog a:hover {
+  background: #58b9e2;
+}
 .entry-meta {
   display: flex;
   flex-direction: row;
@@ -203,6 +209,9 @@ a {
 .form button:hover {
   outline: none;
   background: #2c3644;
+}
+.entry-meta a:hover {
+  color: #c9c9c9;
 }
 
 .post-title {
