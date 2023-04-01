@@ -38,12 +38,15 @@
   cursor: pointer;
   color: #878787;
   padding: 0px 20px;
-  margin: -8px 2px 1px 15px;
+  margin: 2px 2px 1px 35px;
 }
 .hamburger-menu {
   display: none;
   font-size: 25px;
   cursor: pointer;
+}
+.fa-solid {
+  font-size: 33px;
 }
 .nav-element:hover {
   border: 1px solid #e0e0e0;

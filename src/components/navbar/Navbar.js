@@ -85,7 +85,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
         </li>
       </ul>
       <div className="hamburger-menu" onClick={handlerToggle}>
-        <i className="fa-solid fa-bars fa-xl"></i>
+        <i className="fa-solid fa-bars "></i>
       </div>
     </div>
   );
