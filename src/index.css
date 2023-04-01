@@ -66,7 +66,7 @@ a {
   cursor: pointer;
 }
 .main h1:hover {
-  color: #f05a28;
+  color: #f05a28 !important;
 }
 
 .main .entry-meta {
