@@ -1,0 +1,74 @@
+.main-footer {
+  background: #2c3644;
+}
+.row {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.col1 {
+  float: left;
+  padding: 3% 1.1%;
+  margin: 70px;
+}
+.row li {
+  list-style: none;
+  color: #8e99a9;
+  font-size: 13.1px;
+  line-height: 18px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 300ms ease 0s;
+}
+.row li:hover {
+  color: #fff;
+}
+.row p {
+  color: #8e99a9;
+  font-size: 13.1px;
+  line-height: 18px;
+}
+.row a {
+  text-decoration: none;
+  color: #a5aebc;
+}
+.container h4 {
+  background: none;
+  font-size: 11px;
+  color: #ddd;
+  line-height: 27px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+.col {
+  float: right;
+  padding: 30px 58px;
+}
+.twitter {
+  background: #46a9e3;
+  font-size: 14px;
+  border: none;
+  padding: 7px 14px;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.facebook {
+  background: #36549d;
+  font-size: 14px;
+  border: none;
+  padding: 7px 14px;
+  color: #fff;
+  border-radius: 2px;
+  margin: 20px;
+  cursor: pointer;
+}
+.row i {
+  padding-right: 4px;
+}

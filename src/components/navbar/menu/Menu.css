@@ -1,0 +1,32 @@
+.navbars {
+  background-color: #fff;
+  padding-bottom: 20px;
+  position: absolute;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+  z-index: 1000;
+}
+@media screen and (min-width: 920px) {
+  .navbars {
+    display: none;
+  }
+}
+.navbarWrappers {
+  list-style-type: none;
+}
+
+.navbarWrappers {
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.nav-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 23px 15px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+  color: #2c3644;
+}
