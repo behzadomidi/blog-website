@@ -6,10 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e6e9ee;
-}
-
-.darkMode {
-  background: #000;
+  overflow-x: hidden;
 }
 
 * {
@@ -76,7 +73,7 @@ a {
 }
 .main img {
   max-width: 100%;
-  height: 361px;
+  height: 320px;
   width: 100%;
   cursor: pointer;
 }
@@ -111,7 +108,7 @@ a {
   text-transform: uppercase;
 }
 .blogDetails::after {
-  content: ">";
+  content: "";
   position: relative;
   left: 0;
   font-size: 15px;
@@ -209,6 +206,9 @@ a {
 .form button:hover {
   outline: none;
   background: #2c3644;
+}
+.entry-meta a {
+  cursor: pointer;
 }
 .entry-meta a:hover {
   color: #c9c9c9;

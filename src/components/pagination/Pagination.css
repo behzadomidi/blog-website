@@ -1,0 +1,25 @@
+.pagination {
+  position: relative;
+  left: 22.5%;
+  padding: 20px 0 55px 0;
+}
+
+.Mui-selected {
+  background: #f05a28 !important;
+  color: #fff !important;
+}
+.Mui-selected:hover {
+  background: #ff8962 !important;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    position: relative;
+    left: 10%;
+    padding: 20px 0 55px 0;
+  }
+}
+
+.pagination button {
+  color: rgb(124, 124, 124);
+}

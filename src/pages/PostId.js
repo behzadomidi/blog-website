@@ -5,6 +5,7 @@ import imageBlog from "../assets/images/blogger-to-WordPress.jpeg";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Loading from "../components/loading/Loading";
 
 const PostId = () => {
   const { theme } = useSelector((state) => state.themeReducer);
@@ -24,18 +25,6 @@ const PostId = () => {
     }
   };
 
-  const renderLoading = () => {
-    <div
-      style={{
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <h1>loading...</h1>
-    </div>;
-  };
-
   useEffect(() => {
     getPostId();
   }, []);
@@ -47,7 +36,7 @@ const PostId = () => {
         style={{ background: theme == "light" ? "#e6e9ee" : "#100720" }}
       >
         {isLoading ? (
-          renderLoading()
+          <Loading />
         ) : (
           <div className="box">
             <div
@@ -69,16 +58,14 @@ const PostId = () => {
                     <p className="entry-meta">
                       <time className="entry-time">March 18, 2023</time>{" "}
                       <span className="entry-author">
-                        <a href="#" className="entry-link">
+                        <a className="entry-link">
                           <span className="entry-author-name">
                             Colin Newcomer
                           </span>
                         </a>
                       </span>
                       <span>
-                        <a href="#" className="entry-link">
-                          Comments
-                        </a>
+                        <a className="entry-link">Comments</a>
                       </span>
                     </p>
                   </div>

@@ -5,6 +5,8 @@ import imageBlog from "../assets/images/blogger-to-WordPress.jpeg";
 import Footer from "../components/footer/Footer";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { useSelector, useDispatch } from "react-redux";
+import Pagination from "../components/pagination/Pagination";
+import Loading from "../components/loading/Loading";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -27,17 +29,6 @@ const Home = () => {
     }
   };
 
-  const renderLoading = () => {
-    <div
-      style={{
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <h1>loading...</h1>
-    </div>;
-  };
-
   useEffect(() => {
     getData();
   }, []);
@@ -49,7 +40,7 @@ const Home = () => {
         style={{ background: theme == "light" ? "#e6e9ee" : "#100720" }}
       >
         {isLoading ? (
-          renderLoading()
+          <Loading />
         ) : (
           <div className="box">
             <div
@@ -65,7 +56,7 @@ const Home = () => {
                         onClick={() => navigate(`/posts/${post.id.toString()}`)}
                       >
                         <span className="buttonBlog">
-                          <a href="#">WordPress Tutorials</a>
+                          <a>WordPress Tutorials</a>
                         </span>
                         <h1
                           style={{
@@ -77,16 +68,14 @@ const Home = () => {
                         <p className="entry-meta">
                           <time className="entry-time">March 18, 2023</time>{" "}
                           <span className="entry-author">
-                            <a href="#" className="entry-link">
+                            <a className="entry-link">
                               <span className="entry-author-name">
                                 Colin Newcomer
                               </span>
                             </a>
                           </span>
                           <span>
-                            <a href="#" className="entry-link">
-                              Comments
-                            </a>
+                            <a className="entry-link">Comments</a>
                           </span>
                         </p>
                       </div>
@@ -100,7 +89,6 @@ const Home = () => {
                         {post.body}….
                         <a
                           className="blogDetails"
-                          href="#"
                           onClick={() =>
                             navigate(`/posts/${post.id.toString()}`)
                           }
@@ -117,6 +105,7 @@ const Home = () => {
           </div>
         )}
       </div>
+      <div>{!isLoading && <Pagination />}</div>
       {!isLoading && <Footer />}
     </>
   );
