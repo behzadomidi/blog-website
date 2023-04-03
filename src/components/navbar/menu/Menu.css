@@ -6,6 +6,15 @@
   transition: 0.2s ease-in-out;
   z-index: 1000;
 }
+.navbars li {
+  color: #000;
+}
+.darkNavbars {
+  background-color: #182434;
+}
+.darkNavbars li {
+  color: #fff;
+}
 @media screen and (min-width: 920px) {
   .navbars {
     display: none;

@@ -6,51 +6,13 @@ function Menu() {
   const { theme } = useSelector((state) => state.themeReducer);
 
   return (
-    <div
-      className="navbars"
-      style={{ background: theme == "light" ? "#fff" : "#182434" }}
-    >
+    <div className={`${theme == "light" ? "navbars" : "navbars darkNavbars"}`}>
       <ul className="navbarWrappers">
-        <li
-          className="nav-elements"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          CATEGORIES
-        </li>
-        <li
-          className="nav-elements"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          GUIDES
-        </li>
-        <li
-          className="nav-elements"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          WORDPRESS HOSTING
-        </li>
-        <li
-          className="nav-elements"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          MANAGED HOSTING
-        </li>
-        <li
-          className="nav-elements"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          COUPONS
-        </li>
+        <li className="nav-elements">CATEGORIES</li>
+        <li className="nav-elements">GUIDES</li>
+        <li className="nav-elements">WORDPRESS HOSTING</li>
+        <li className="nav-elements">MANAGED HOSTING</li>
+        <li className="nav-elements">COUPONS</li>
       </ul>
     </div>
   );

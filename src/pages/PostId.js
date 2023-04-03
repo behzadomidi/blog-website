@@ -31,30 +31,22 @@ const PostId = () => {
 
   return (
     <div>
-      <div
-        className="App"
-        style={{ background: theme == "light" ? "#e6e9ee" : "#100720" }}
-      >
+      <div className={`${theme == "light" ? "App" : "App darkApp"}`}>
         {isLoading ? (
           <Loading />
         ) : (
           <div className="box">
             <div
-              className="content main"
-              style={{ background: theme == "light" ? "#e6e9ee" : "#100720" }}
+              className={`${
+                theme == "light"
+                  ? "content main singleblog"
+                  : "content main darksingleblog"
+              }`}
             >
               <div>
                 <div>
                   <div className="blogHeader">
-                    <h1
-                      style={{
-                        color: theme == "light" ? "#000" : "#fff",
-                        textAlign: "center",
-                        paddingBottom: "20px",
-                      }}
-                    >
-                      {postId.title}
-                    </h1>
+                    <h1>{postId.title}</h1>
                     <p className="entry-meta">
                       <time className="entry-time">March 18, 2023</time>{" "}
                       <span className="entry-author">
@@ -72,11 +64,9 @@ const PostId = () => {
 
                   <img src={imageBlog} alt="blog" />
                   <p
-                    className="postDec"
-                    style={{
-                      color: theme == "light" ? "#000" : "#fff",
-                      marginTop: "20px",
-                    }}
+                    className={`${
+                      theme == "light" ? "postDec" : " darkpostDec"
+                    }`}
                   >
                     {postId.body}.
                   </p>

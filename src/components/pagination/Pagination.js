@@ -7,10 +7,7 @@ import { useSelector } from "react-redux";
 export default function PaginationRounded() {
   const { theme } = useSelector((state) => state.themeReducer);
   return (
-    <div
-      className="pag-main"
-      style={{ background: theme == "light" ? "#e6e9ee" : "#100720" }}
-    >
+    <div className={`${theme == "light" ? "pag-main" : "pag-main darkpag"}`}>
       <div className="pagination">
         <Stack spacing={2}>
           <Pagination count={10} shape="rounded" />

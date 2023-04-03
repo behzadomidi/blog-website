@@ -4,14 +4,13 @@ import { useNavigate } from "react-router-dom";
 import imageBlog from "../assets/images/blogger-to-WordPress.jpeg";
 import Footer from "../components/footer/Footer";
 import Sidebar from "../components/Sidebar/Sidebar";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import Pagination from "../components/pagination/Pagination";
 import Loading from "../components/loading/Loading";
 
 const Home = () => {
   const navigate = useNavigate();
   const { theme } = useSelector((state) => state.themeReducer);
-  const dispatch = useDispatch();
 
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -35,17 +34,15 @@ const Home = () => {
 
   return (
     <>
-      <div
-        className="App"
-        style={{ background: theme == "light" ? "#e6e9ee" : "#100720" }}
-      >
+      <div className={`${theme == "light" ? "App" : "App darkApp"}`}>
         {isLoading ? (
           <Loading />
         ) : (
           <div className="box">
             <div
-              className="content main"
-              style={{ background: theme == "light" ? "#fff" : "#2c3644" }}
+              className={`${
+                theme == "light" ? "content main" : "content main darkMain"
+              }`}
             >
               <div>
                 {posts &&
@@ -58,13 +55,7 @@ const Home = () => {
                         <span className="buttonBlog">
                           <a>WordPress Tutorials</a>
                         </span>
-                        <h1
-                          style={{
-                            color: theme == "light" ? "#000" : "#fff",
-                          }}
-                        >
-                          {post.title}
-                        </h1>
+                        <h1>{post.title}</h1>
                         <p className="entry-meta">
                           <time className="entry-time">March 18, 2023</time>{" "}
                           <span className="entry-author">
@@ -81,10 +72,9 @@ const Home = () => {
                       </div>
                       <img src={imageBlog} alt="blog" />
                       <p
-                        className="postDec"
-                        style={{
-                          color: theme == "light" ? "#000" : "#fff",
-                        }}
+                        className={`${
+                          theme == "light" ? "postDec" : " darkpostDec"
+                        }`}
                       >
                         {post.body}….
                         <a

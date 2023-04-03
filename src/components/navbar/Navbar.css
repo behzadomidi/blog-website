@@ -7,6 +7,16 @@
   height: 5rem;
   padding: 30px 170px 30px 170px;
 }
+.darkNav {
+  background-color: #182434;
+}
+
+.nav li {
+  color: #000;
+}
+.darkNav li {
+  color: #fff;
+}
 
 .navbarWrapper {
   display: flex;

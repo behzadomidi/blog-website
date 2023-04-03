@@ -3,6 +3,12 @@
   left: 22.5%;
   padding: 20px 0 55px 0;
 }
+.pag-main {
+  background: #e6e9ee;
+}
+.darkpag {
+  background: #100720;
+}
 
 .Mui-selected {
   background: #f05a28 !important;

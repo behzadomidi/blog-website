@@ -22,10 +22,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
   };
 
   return (
-    <div
-      className="nav"
-      style={{ background: theme == "light" ? "#fff" : "#182434" }}
-    >
+    <div className={`${theme == "light" ? "nav" : "nav darkNav"}`}>
       <ul className="navbarWrapper">
         <li>
           <div className="nav-logo" onClick={() => navigate("/")}>
@@ -37,46 +34,11 @@ const Navbar = ({ isOpen, setIsOpen }) => {
             />
           </div>
         </li>
-        <li
-          className="nav-element"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          CATEGORIES
-        </li>
-        <li
-          className="nav-element"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          GUIDES
-        </li>
-        <li
-          className="nav-element"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          WORDPRESS HOSTING
-        </li>
-        <li
-          className="nav-element"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          MANAGED HOSTING
-        </li>
-        <li
-          className="nav-element"
-          style={{
-            color: theme == "light" ? "#000" : "#fff",
-          }}
-        >
-          COUPONS
-        </li>
+        <li className="nav-element">CATEGORIES</li>
+        <li className="nav-element">GUIDES</li>
+        <li className="nav-element">WORDPRESS HOSTING</li>
+        <li className="nav-element">MANAGED HOSTING</li>
+        <li className="nav-element">COUPONS</li>
         <li className="nav-icon">
           <label className="switch">
             <input type="checkbox" onChange={changeTheme} />

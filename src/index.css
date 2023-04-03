@@ -8,6 +8,12 @@ body {
   background-color: #e6e9ee;
   overflow-x: hidden;
 }
+.app {
+  background: #e6e9ee;
+}
+.darkApp {
+  background: #100720;
+}
 
 * {
   margin: 0;
@@ -26,6 +32,21 @@ a {
   background: #fff;
   width: 101%;
   margin: 30px auto;
+}
+.darkMain {
+  background: #2c3644;
+}
+.darkMain h1 {
+  color: #fff !important;
+}
+.darksingleblog h1 {
+  color: #fff !important;
+}
+.darkpostDec {
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 17px;
+  line-height: 32px;
 }
 .form {
   background: #2c3644;
@@ -61,6 +82,7 @@ a {
   font-weight: 800;
   transition: all ease 0s;
   cursor: pointer;
+  color: #000;
 }
 .main h1:hover {
   color: #f05a28 !important;
@@ -122,6 +144,12 @@ a {
 }
 .buttonBlog a:hover {
   background: #58b9e2;
+}
+.singleblog {
+  background: #e6e9ee !important;
+}
+.darksingleblog {
+  background: #100720 !important;
 }
 .entry-meta {
   display: flex;
@@ -218,6 +246,24 @@ a {
   background: #d2d9e2;
   color: #535b67;
   margin-top: 30px;
+}
+.post-title p {
+  color: #8b95a4;
+}
+.post-title h4 {
+  color: #000;
+}
+.darkPost h4 {
+  color: #8b95a4;
+}
+.post-title a {
+  color: #000;
+}
+.darkPost a {
+  color: #8b95a4 !important;
+}
+.darkPost {
+  background: #2c3644;
 }
 .header-title {
   color: #000;
